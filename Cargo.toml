@@ -1,11 +1,11 @@
 [package]
 name = "biologreen"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["Atuhurra Solomon"]
 description = "The official Rust SDK for the BioLogreen Facial Authentication API."
 license = "MIT"
-repository = "https://github.com/AtuhurraSolomon/biologreen-rust-sdk"
+repository = "https://github.com/AtuhurraSolomon/biologreen-rust-sdk-"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
