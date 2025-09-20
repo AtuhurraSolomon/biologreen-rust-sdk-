@@ -1,0 +1,29 @@
+[package]
+name = "biologreen"
+version = "0.1.0"
+edition = "2024"
+authors = ["Atuhurra Solomon"]
+description = "The official Rust SDK for the BioLogreen Facial Authentication API."
+license = "MIT"
+repository = "https://github.com/AtuhurraSolomon/biologreen-rust-sdk"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# The HTTP client we'll use to talk to your API. It's the standard for async Rust.
+reqwest = { version = "0.12", features = ["json"] }
+
+# The standard library for serializing and deserializing Rust data structures (to/from JSON).
+# The "derive" feature allows it to automatically implement the necessary logic for our structs.
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# A crate for Base64 encoding our image bytes.
+base64 = "0.22"
+
+# A helper crate for creating clean, professional error types, similar to BioLogreenApiException.
+thiserror = "1.0"
+
+# The runtime for executing async code. We need this to make async HTTP requests work.
+tokio = { version = "1", features = ["full"] }
+
